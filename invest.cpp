@@ -78,15 +78,15 @@ void investirscr(){
   cout << "4 - Fundos de Investimento" << endl;
   cout << "5 - não desejo Investir " << endl;
   if (invest == 1){
-
+    
   }
   else if (invest == 2){
     
   }
-  else if (invest ==3){
+  else if (invest == 3){
     
   }
-  else if (invest ==4){
+  else if (invest == 4){
     
   }
   else{
