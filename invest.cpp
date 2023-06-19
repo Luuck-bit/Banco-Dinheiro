@@ -7,16 +7,65 @@
 // Utilizar as variáveis fora da função principal vale para todas as classes e funções.
 int guardar = 0;
 int resgatar;
-int quantidade, opcao;
+int quantidade, opcao, type;
 int depositar, sacar, categoria;
-int saldo, investir, cardacess, dinlock;
+int investir, cardacess, dinlock;
 int limite, feedback, opcaoexp; // para não poluir o código visualmente, você pode colocar uma vírgula em var do mesmo tipo.
 std::string nome;
-char SN, firstinv, investirvalor;
-int valor;
+char SN, firstinv, investirvalor, desinv;
+int valor, invresult;
 std::string invest;
+float saldo;
+
 
 using namespace std;
+
+tesourodireto(){
+  if (type == 1){
+   cout << "o IPCA atual é de 3,94%" << endl;
+   cout << "Deseja investir? s/n" << endl;
+   cin >> desinv;
+   desinv = toupper(desinv);
+   if (desinv == 'S'){
+   invresult = valor * 0.0394;
+   cout << "O rendimento foi de: " << invresult;
+   saldo += invresult;
+   }else{
+    cout << "Ok..." << endl;
+   }
+   
+   
+  }else if (type == 2){
+    cout << "Selic atual é de 6,25% " << endl;
+    cout << "Deseja investir? s/n" << endl;
+    cin >> desinv;
+    desinv = toupper(desinv);
+    if (desinv == 'S'){
+      invresult = valor * 0.0625;
+      cout << "o rendimento foi de: " << invresult;
+      saldo += invresult;
+    }else{
+      cout << "Ok..." << endl;
+    }
+  }else if (type == 3){
+  cout << "Prefixado atual é de 11%" << endl;
+  cout << "Deseja investir? s/n " << endl;
+  cin >> desinv;
+  desinv = toupper(desinv);
+  if (desinv == 'S'){
+  invresult = valor * 0.11;
+  cout << "o rendimento foi de: " << invresult;
+  saldo += invresult;
+  }else{
+    cout << "Ok..." << endl;
+  }
+  
+  
+  }else{
+    cout << "O valor é de: " << valor << endl;
+ }
+  
+}
 
 class Investimento{
 private: 
@@ -78,7 +127,14 @@ void investirscr(){
   cout << "4 - Fundos de Investimento" << endl;
   cout << "5 - não desejo Investir " << endl;
   if (invest == 1){
-    
+    cout << "Tesouro Direto, qual investimento?" << endl;
+    cout << " IPCA " << endl;
+    cout << "Selic" << endl;
+    cout << "Prefixado" << endl;
+    cout << "Ver dinheiro investido. " << endl;
+    cin >> type;
+    tesourodireto();
+
   }
   else if (invest == 2){
     
