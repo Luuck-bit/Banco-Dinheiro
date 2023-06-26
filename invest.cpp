@@ -123,7 +123,7 @@ void investirscr(){
   
   cout << "1 - Tesouro Direto" << endl;
   cout << "2 - CDB" << endl;
-  cout << "3 = Ações Empresariais" << endl;
+  cout << "3 - Ações Empresariais" << endl;
   cout << "4 - Fundos de Investimento" << endl;
   cout << "5 - não desejo Investir " << endl;
   if (invest == 1){
@@ -146,7 +146,7 @@ void investirscr(){
     
   }
   else{
-
+     cout << "OK, volta quando quiser... " << endl;
   }
   
   }

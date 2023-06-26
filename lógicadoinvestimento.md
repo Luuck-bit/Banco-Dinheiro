@@ -1,3 +1,7 @@
+➜ Lógica dos investimentos:
+
+。Investimento tesouro direto:
+
 Suponha que o usuário tenha realizado um investimento no tipo de investimento Prefixado, com um valor investido de R$ 10.000,00 e uma taxa de juros fixa de 5% ao ano.
 
 A lógica para calcular o retorno financeiro seria a seguinte:
@@ -29,3 +33,16 @@ Valor Investido: R$ 10.000,00
 Rendimento: R$ 500,00
 Valor Atualizado: R$ 10.500,00
 Essa é uma forma simplificada de calcular o retorno financeiro com uma taxa de juros fixa. É importante lembrar que no Tesouro Direto os investimentos podem ter diferentes prazos e taxas de juros, além de considerações como impostos e outros custos. Portanto, é essencial adaptar essa lógica de acordo com as regras e fórmulas específicas do Tesouro Direto ou consultar uma API ou serviço que forneça os cálculos precisos.
+
+。investimento CDB:
+
+o CDB vai possuir 3 investimentos com seus respectivos valores: 
+‣ Prefixado = 5%
+‣ Pós-fixado = 9,90%
+‣ Híbrido = 15%
+
+A lógica é a mesma, valor do investimento multiplicado pelo valor investido.
+
+
+
+
